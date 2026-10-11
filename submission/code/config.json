@@ -1,0 +1,14 @@
+{
+  "selected_candidate": "generic training medoid technical fallback",
+  "brain_conditioned_solution": false,
+  "identical_clouds_for_all_scans": true,
+  "validation_metrics_file": "../metrics/val_metrics.json",
+  "prediction_archive": "../predictions.npz",
+  "test_inputs_used": [
+    "sample_id only"
+  ],
+  "training_shape_source": "data/train.npz obj_points",
+  "generator": "generate_submission.py",
+  "rendering": "starter.export_outputs using calibrated camera indices 0, 8, 16, 24",
+  "pretrained_models": false
+}

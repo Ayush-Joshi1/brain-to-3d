@@ -1,0 +1,28 @@
+﻿# Dataset and generated experiments
+data/
+outputs/
+*.joblib
+*.pth
+*.pt
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated submission artifacts
+submission.zip
+submission/predictions.npz
+submission/ply/
+submission/renders/
+
+# Editor and operating system
+.vscode/
+.DS_Store
+Thumbs.db

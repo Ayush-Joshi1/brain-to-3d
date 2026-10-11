@@ -1,0 +1,60 @@
+---
+license: apache-2.0
+task_categories:
+- image-to-3d
+tags:
+- fmri
+- 3d-reconstruction
+- neuroscience
+- brain-decoding
+---
+
+# fMRI-Shape Dataset: A Component of the fMRI-3D Dataset for MinD-3D++
+
+This repository contains the `fMRI-Shape` dataset, a component of the comprehensive fMRI-3D dataset introduced and utilized in the paper [MinD-3D++: Advancing fMRI-Based 3D Reconstruction with High-Quality Textured Mesh Generation and a Comprehensive Dataset](https://huggingface.co/papers/2409.11315). This work builds upon the initial "MinD-3D" research.
+
+The fMRI-3D dataset consists of two components: `fMRI-Shape` (this dataset) and [fMRI-Objaverse](https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse). Both datasets are designed to advance 3D visual reconstruction from fMRI data.
+
+**Project Page:** https://jianxgao.github.io/MinD-3D
+
+**Code (GitHub):** https://github.com/JianxGao/MinD-3D
+
+## Overview
+MinD-3D (and MinD-3D++) aims to reconstruct high-quality 3D objects based on fMRI data. This `fMRI-Shape` dataset contains fMRI recordings and corresponding 3D object stimuli used in this research.
+
+## Repository Structure
+- **annotations**: Contains metadata and annotations related to the fMRI data for each subject.
+- **sub-00xx**: Each folder corresponds to a specific subject and includes their respective raw and processed fMRI data.
+- **stimuli.zip**: A ZIP archive of all videos shown to subjects during the fMRI scans. This file includes the stimuli used across different sessions and is critical for reproducibility of the study findings.
+- **camera_pose.zip**: The camera pose for each frame in the videos (each containing 192 frames) in the stimuli.
+
+## Data Description
+- **raw_data**: Raw fMRI data collected directly from the imaging machine.
+- **npy_data**: Processed data. We utilized fMRIPrep and the methodologies described in our paper to derive and store the data in NumPy format (.npy).
+
+## Citation
+
+If you find our work and datasets useful for your research and applications, please cite the respective papers:
+
+```bibtex
+@misc{gao2023mind3d,
+  title={MinD-3D: Reconstruct High-quality 3D objects in Human Brain}, 
+  author={Jianxiong Gao and Yuqian Fu and Yun Wang and Xuelin Qian and Jianfeng Feng and Yanwei Fu},
+  year={2023},
+  eprint={2312.07485},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+```
+
+```bibtex
+@misc{gao2025mind3dadvancingfmribased3d,
+  title={MinD-3D++: Advancing fMRI-Based 3D Reconstruction with High-Quality Textured Mesh Generation and a Comprehensive Dataset}, 
+  author={Jianxiong Gao and Yanwei Fu and Yuqian Fu and Yun Wang and Xuelin Qian and Jianfeng Feng},
+  year={2025},
+  eprint={2409.11315},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2409.11315}, 
+}
+```
